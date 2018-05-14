@@ -26,9 +26,9 @@ public class Controller implements Initializable {
     @FXML
     CheckBox cb;
 
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        System.out.println(location);
         System.out.println("Hello");
     }
 
@@ -38,14 +38,10 @@ public class Controller implements Initializable {
         System.out.println("Textfield value: "+tf.getText());
         System.out.println("Textfield value 2: "+tf_2.getText());
         System.out.println("Checkbox state: "+cb.isSelected());
-
         //Parent root = FXMLLoader.load(Main.class.getResource("sample.fxml"));
         //System.out.println(root);
-
-        Main.changeScene("SecondView.fxml");
+        SceneManager.changeScene("SecondView.fxml");
 
     }
-
-
 
 }

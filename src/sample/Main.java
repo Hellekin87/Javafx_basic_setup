@@ -5,28 +5,21 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.io.IOException;
+
 
 public class Main extends Application {
 
-    static Stage stage;
-
     @Override
-    public void start(Stage primaryStage) throws Exception{
-        stage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+    public void start(Stage primaryStage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
+        Parent root = loader.load();
 
+        //SceneManager
+        SceneManager sm = new SceneManager(primaryStage);
 
-        stage.setTitle("Main");
-        stage.setScene(new Scene(root, 600, 400));
-        stage.show();
-    }
-
-    public static void changeScene(String sceneName) throws IOException{
-
-        Parent newRoot = FXMLLoader.load(Main.class.getResource(sceneName));
-
-        stage.setScene(new Scene(newRoot, stage.getWidth(), stage.getHeight()));
+        primaryStage.setTitle("Main");
+        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.show();
 
     }
 
