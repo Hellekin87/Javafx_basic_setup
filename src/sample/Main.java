@@ -30,7 +30,8 @@ public class Main extends Application {
     public static void changeScene(String sceneName) throws IOException{
 
         Parent newRoot = FXMLLoader.load(Main.class.getResource(sceneName));
-        stage.setScene(new Scene(newRoot, stage.getMaxWidth(), stage.getMaxHeight()));
+
+        stage.setScene(new Scene(newRoot, stage.getWidth(), stage.getHeight()));
 
     }
 
