@@ -38,7 +38,7 @@ public class Controller implements Initializable {
         System.out.println("Checkbox state: "+cb.isSelected());
 
         if(cb.isSelected()){
-            
+            System.out.println("gg");
         }
     }
 
