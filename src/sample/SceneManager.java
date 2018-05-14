@@ -16,8 +16,9 @@ public class SceneManager {
 
     static public void changeScene(String sceneName) throws IOException {
         Parent newRoot = FXMLLoader.load(Main.class.getResource(sceneName));
-        stage.setScene(new Scene(newRoot));
         stage.setHeight(stage.getHeight());
         stage.setWidth(stage.getWidth());
+        stage.setScene(new Scene(newRoot));
+
     }
 }
