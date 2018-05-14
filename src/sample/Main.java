@@ -10,9 +10,6 @@ import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.util.Duration;
-
-import java.awt.*;
 import java.io.IOException;
 
 public class Main extends Application {
@@ -37,9 +34,6 @@ public class Main extends Application {
 
     }
 
-    public static void newScene(){
-
-    }
     public static void main(String[] args) {
         launch(args);
     }
