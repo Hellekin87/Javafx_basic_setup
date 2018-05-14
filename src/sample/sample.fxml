@@ -19,7 +19,7 @@
       </Label>
       <TextField fx:id="tf" layoutX="72.0" layoutY="75.0" prefHeight="25.0" prefWidth="170.0" />
       <Slider layoutX="72.0" layoutY="130.0" prefHeight="25.0" prefWidth="296.0" />
-      <CheckBox fx:id="cb" layoutX="72.0" layoutY="175.0" mnemonicParsing="false" text="Check me" textFill="WHITE" />
+      <CheckBox fx:id="cb" layoutX="72.0" layoutY="175.0" mnemonicParsing="false" text="Launch SecondView" textFill="WHITE" />
       <DatePicker layoutX="72.0" layoutY="220.0" prefHeight="25.0" prefWidth="340.0" />
       <TextField fx:id="tf_2" layoutX="257.0" layoutY="75.0" prefHeight="25.0" prefWidth="150.0" />
    </children>
