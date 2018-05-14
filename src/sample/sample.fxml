@@ -9,17 +9,18 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #565654;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Button fx:id="start" layoutX="490.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Start" />
-      <Label layoutX="171.0" layoutY="14.0" text="Hallo ich bin eine GUI">
+      <Button fx:id="start" layoutX="490.0" layoutY="361.0" mnemonicParsing="false" onAction="#starthandle" prefHeight="25.0" prefWidth="96.0" text="Start" />
+      <Label layoutX="225.0" layoutY="14.0" text="Java FX GUI" textFill="#fffcfc">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <TextField layoutX="72.0" layoutY="75.0" prefHeight="25.0" prefWidth="340.0" />
-      <Slider layoutX="86.0" layoutY="131.0" prefHeight="25.0" prefWidth="296.0" />
-      <CheckBox layoutX="72.0" layoutY="175.0" mnemonicParsing="false" text="Check me" />
-      <DatePicker layoutX="72.0" layoutY="218.0" prefHeight="25.0" prefWidth="340.0" />
+      <TextField fx:id="tf" layoutX="72.0" layoutY="75.0" prefHeight="25.0" prefWidth="170.0" />
+      <Slider layoutX="72.0" layoutY="130.0" prefHeight="25.0" prefWidth="296.0" />
+      <CheckBox fx:id="cb" layoutX="72.0" layoutY="175.0" mnemonicParsing="false" text="Check me" textFill="WHITE" />
+      <DatePicker layoutX="72.0" layoutY="220.0" prefHeight="25.0" prefWidth="340.0" />
+      <TextField fx:id="tf_2" layoutX="257.0" layoutY="75.0" prefHeight="25.0" prefWidth="150.0" />
    </children>
 </Pane>
